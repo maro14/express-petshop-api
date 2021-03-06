@@ -1,0 +1,27 @@
+{
+  "name": "express-petshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [
+    "express",
+    "monastery"
+  ],
+  "author": "Teheskhoel Fritz",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "cors": "^2.8.5",
+    "helmet": "^4.4.1",
+    "monastery": "^1.11.1",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

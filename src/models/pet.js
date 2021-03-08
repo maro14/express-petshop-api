@@ -2,7 +2,8 @@ const db = require('monastery')(process.env.MONGO_URL)
 
 const Pet = db.model('pet', {
     fields: {
-        name: { type: 'string'},
+        name: { type: 'string',
+            required: [ true, 'Insert name..!!']},
         age: {type: 'number'}
     }
 })

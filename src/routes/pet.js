@@ -4,7 +4,7 @@ const Pet = require("../models/pet");
 const router = Router();
 
 router.get("/", async (req, res) => {
-  Pet.find({}, async (err, doc) => {
+  Pet.find({}, (err, doc) => {
     if (err) {
       res.status(404).json({
         data: err,
@@ -43,7 +43,8 @@ router.get("/:id", async (req, res) => {
 
 router.put("/:id", async (req, res) => {
   const { id } = req.params.id;
-  Pet.update(id, { $set: req.query }).then((item) => {
+  Pet.update(id, { $set: req.query })
+      .then((item) => {
     res.status(204).json({
       data: item,
       status: "Pet updated successfully",

@@ -1,21 +1,21 @@
 # petshop api
 
-
+## (Under Development)
 
 ## Setup
 
 ```sh
-npm install
+yarn install
 ```
 
 ## Usage
 
 ```sh
-npm run start
+yarn start
 ```
 
 ## Development
 
 ```sh
-npm run dev 
+yarn dev 
 ```
